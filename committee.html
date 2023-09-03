@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="committee.css" />
+    <link rel="shortcut icon" type="image" href="./images/iete_logo.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>IETE - Committee</title>
+  </head>
+
+  <body>
+    <!-- <div class="preloader">
+      <div class="iete-animation">
+        <span class="letter">I</span>
+        <span class="letter">E</span>
+        <span class="letter">T</span>
+        <span class="letter">E</span>
+      </div>
+    </div> -->
+
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgba(255, 255, 255, 0.6)"
+    >
+      <div class="container-fluid">
+        <a
+          style="display: flex; flex-direction: row"
+          class="navbar-brand mx-5"
+          href="#"
+          ><img src="./images/iete_logo.png" alt="logo" id="iete_logo" />
+          <h2 class="mx-3">IETE</h2>
+          <p class="mt-2">
+            The Institution of Electronics and Telecommunication Engineers,
+            <br />Chennai
+          </p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="collapse()"
+        >
+          <span class="navbar-toggler-icon">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="index.html"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Home</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="about.html"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >About</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Committee</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Events</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Membership</span
+                ></a
+              >
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-target=".navbar-collapse.show"
+                aria-expanded="false"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                  Chencon</span
+                >
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">2022</a></li>
+                <li><a class="dropdown-item" href="#">2021</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-target=".navbar-collapse.show"
+                aria-expanded="false"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                  Newsletter</span
+                >
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                      >Vol 1 - No.3</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                      >Vol 1 - No.2</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                      >Vol 1 - No.1</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#contact"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Contact</span
+                ></a
+              >
+            </li>
+            <div class="theme-toggler mx-3">
+              <span class="material-symbols-outlined active"> light_mode </span>
+              <span class="material-symbols-outlined"> dark_mode </span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- <img
+        src="./images/iete main.png"
+        alt="img"
+        class="img-fluid"
+        id="abt-img"
+      /> -->
+      <h1>CORE COMMITTEE</h1>
+    </div>
+
+    <div class="com-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/venkatesh.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Dr.N.Venkateswaran</h4>
+                  <strong>Chairman</strong>
+                  <p class="card-text">
+                    Professor,Dept. of ECE <br />Sri Siva Subramaniya Nadar
+                    College Of Engineering
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >venkateswaran.iete@gmail.com</a
+                      >
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/tata.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Tata Sudhakar</h5>
+                  <strong>Immd Post Chairman </strong>
+                  <p class="card-text">
+                    Scientist G & Head <br />
+                    NIOT, Chennai
+                  </p>
+                  <br />
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >tatasudhakar@gmail.com
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/shakthi.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mr. Shakthi Murugan</h5>
+                  <strong>Honarary Secretary </strong>
+
+                  <p class="card-text">
+                    Assistant Professor / ECE <br />Jeppiaar Maamallan
+                    Engineering College
+                  </p>
+                  <br />
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >shakthimuruganece@gmail.com
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/shakthi.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mr. Shakthi Murugan</h5>
+                  <strong>Honarary Secretary </strong>
+
+                  <p class="card-text">
+                    Assistant Professor / ECE <br />Jeppiaar Maamallan
+                    Engineering College
+                  </p>
+                  <br />
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >shakthimuruganece@gmail.com
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/tata.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mr. Shakthi Murugan</h5>
+                  <strong>Honarary Secretary </strong>
+
+                  <p class="card-text">
+                    Assistant Professor / ECE <br />Jeppiaar Maamallan
+                    Engineering College
+                  </p>
+                  <br />
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >shakthimuruganece@gmail.com
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/tjj.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mr. Shakthi Murugan</h5>
+                  <strong>Honarary Secretary </strong>
+
+                  <p class="card-text">
+                    Assistant Professor / ECE <br />Jeppiaar Maamallan
+                    Engineering College
+                  </p>
+                  <br />
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >shakthimuruganece@gmail.com
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/shakthi.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Dr.N.Venkateswaran</h4>
+                  <strong>Chairman</strong>
+                  <p class="card-text">
+                    Professor,Dept. of ECE <br />Sri Siva Subramaniya Nadar
+                    College Of Engineering
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >venkateswaran.iete@gmail.com</a
+                      >
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/vijendra.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/arunkumar.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/thulasi.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Dr.N.Venkateswaran</h4>
+                  <strong>Chairman</strong>
+                  <p class="card-text">
+                    Professor,Dept. of ECE <br />Sri Siva Subramaniya Nadar
+                    College Of Engineering
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >venkateswaran.iete@gmail.com</a
+                      >
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/arun.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/dr_vaishali.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card mb-3 mx-5 my-5" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./images/committee/sumathi.jpeg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Dr.N.Venkateswaran</h4>
+                  <strong>Chairman</strong>
+                  <p class="card-text">
+                    Professor,Dept. of ECE <br />Sri Siva Subramaniya Nadar
+                    College Of Engineering
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      ><a href="venkateswaran.iete@gmail.com"
+                        >venkateswaran.iete@gmail.com</a
+                      >
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="to-top"
+      ><span class="material-symbols-outlined"> expand_less </span></a
+    >
+
+    <footer class="bg-dark text-white pt-5 pb-4" id="contact">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold"
+              style="color: skyblue"
+              id="contacted"
+            >
+              IETE Chennai
+            </h5>
+            <p id="foot-content">
+              <span>IETE Chennai centre,</span><br />
+              No: 37, Tamil Nadu 600086 <br />Conran Smith Road <br />Entrance
+              Peters Road, Gopalapuram,Chennai, <br /><br />
+              <span>Phone: 044 2835 0773</span> <br />
+              <span>Email: ietechennai@gmail.com</span>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold"
+              style="color: skyblue"
+            >
+              LINKS
+            </h5>
+            <p>
+              <a
+                href="index.html"
+                class="text-white"
+                style="text-decoration: none"
+                >Home</a
+              >
+            </p>
+            <p>
+              <a
+                href="about.html"
+                class="text-white"
+                style="text-decoration: none"
+                >About</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Committee</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Events</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Contact</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold"
+              style="color: skyblue"
+            >
+              CONNECT WITH US
+            </h5>
+            <a href="#"><img src="./images/ig.png" alt="insta" id="insta" /></a>
+            <a href="#"
+              ><img src="./images/linkedin.png" alt="linkedin" id="linkedin"
+            /></a>
+          </div>
+          <p class="copyright">IETE Chennai @ All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image" href="./images/iete_logo.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>IETE CHENNAI</title>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="iete-animation">
+        <span class="letter">I</span>
+        <span class="letter">E</span>
+        <span class="letter">T</span>
+        <span class="letter">E</span>
+      </div>
+    </div>
+
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgba(255, 255, 255, 0.6)"
+    >
+      <div class="container-fluid">
+        <a
+          style="display: flex; flex-direction: row"
+          class="navbar-brand mx-5"
+          href="#"
+          ><img src="./images/iete_logo.png" alt="logo" id="iete_logo" />
+          <h2 class="mx-3">IETE</h2>
+          <p class="mt-2">
+            The Institution of Electronics and Telecommunication Engineers,
+            <br />Chennai
+          </p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="collapse()"
+        >
+          <span class="navbar-toggler-icon">
+            <span class="material-symbols-outlined" id="menu"> menu </span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Home</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="about.html"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >About</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="committee.html"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Committee</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="events-container"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Events</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Membership</span
+                ></a
+              >
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-target=".navbar-collapse.show"
+                aria-expanded="false"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                  Chencon</span
+                >
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">2022</a></li>
+                <li><a class="dropdown-item" href="#">2021</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-target=".navbar-collapse.show"
+                aria-expanded="false"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                  Newsletter</span
+                >
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                      >Vol 1 - No.3</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                      >Vol 1 - No.2</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                      >Vol 1 - No.1</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#contact"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                ><span data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                  >Contact</span
+                ></a
+              >
+            </li>
+            <div class="theme-toggler mx-3">
+              <span class="material-symbols-outlined active"> light_mode </span>
+              <span class="material-symbols-outlined"> dark_mode </span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <marquee
+      class="my-2"
+      id="top-marq"
+      width="100%"
+      direction="left"
+      height="30px"
+      scrollamount="12"
+      style="cursor: pointer"
+      onMouseOver="document.getElementById('top-marq').stop();"
+      onMouseOut="document.getElementById('top-marq').start();"
+    >
+      <a href="#">Welcome to IETE Chennai Centre!</a
+      >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Activities of IETE</a>
+    </marquee>
+
+    <div class="main-container">
+      <div class="left-container">
+        <div class="box-container">
+          <h1 id="learn">
+            Learning Today, <br />
+            Leading Tomorrow
+          </h1>
+        </div>
+        <div class="marquee-container mx-5">
+          <h2>Updates</h2>
+          <marquee
+            id="scbar1"
+            width="100%"
+            direction="up"
+            height="300"
+            bgcolor="transparent"
+            marquee
+            behavior="scroll"
+            scrollamount="1"
+            truespeed="1"
+            scrolldelay="15"
+            onMouseOver="document.getElementById('scbar1').stop();"
+            onMouseOut="document.getElementById('scbar1').start();"
+            style="padding: 20px"
+          >
+            <p>
+              Distinguished Fellows Election - 2023 : Shri P S Sundaram
+              (F068730) and Shri G Ramesh (F036796) declared elected.
+            </p>
+            <p>&nbsp;</p>
+            <hr />
+            <p>&nbsp;</p>
+            <p>
+              <a href="G20-discount.pdf" target="_blank"
+                >G20 Discount on Membership Fee</a
+              >
+            </p>
+            <p>&nbsp;</p>
+            <hr />
+            <p>&nbsp;</p>
+            <a href="HighCourtJudgementCourses.pdf" target="_blank"
+              >Final High Court Judgement No. 2023/DHC/000446 dated 13 Jan 2023
+              related to continuation of IETE courses. This was communicated to
+              IETE students enrolled between June 2013 - July 2020 with
+              undertaking.</a
+            >
+            <p>&nbsp;</p>
+            <hr />
+            <p>&nbsp;</p>
+            <p>
+              <a href="subs.html"
+                >Subscription rates for IETE journals have been revised w.e.f.
+                January 2023</a
+              >
+            </p>
+            <p>&nbsp;</p>
+            <hr />
+            <p>&nbsp;</p>
+            <p>
+              Henceforth Lead/Corresponding authors will not receive hard copies
+              of IETE Journals except on demand.
+            </p>
+            <p>&nbsp;</p>
+            <hr />
+            <p>&nbsp;</p>
+            <p>
+              <a href="List of Winners IETE Awards 2022.pdf" target="_blank"
+                >The results for IETE AWARDS 2022.</a
+              >
+            </p>
+            <p>&nbsp;</p>
+            <hr />
+            <p>
+              <a href="Revised-ISF-Fee.pdf" target="_blank"
+                >Revised ISF Fee w.e.f. 01 July 2022</a
+              >
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              IETE Journals:
+              <a href="Subscription%20Rate%20List-2023.pdf" target="_blank"
+                >Subscription Rate List-2023</a
+              >
+              ||
+              <a href="Advertisement Rate list-2022-final.pdf" target="_blank"
+                >Advertisement Rate 2022</a
+              >
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              <a
+                href="NotificationREP.pdf"
+                target="_blank"
+                onMouseOver="this.parentNode.stop();"
+                onMouseOut="this.parentNode.start();"
+                >NOTIFICATION regarding Extra page charges in IETE Journals</a
+              >
+            </p>
+          </marquee>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="./images/iete main.png" alt="" />
+      </div>
+    </div>
+    <a href="#" class="to-top"
+      ><span class="material-symbols-outlined"> expand_less </span></a
+    >
+    <div class="quote-container">
+      <div class="inside">
+        <q
+          >INNOVATION FOR THE PEOPLE AND BY THE PEOPLE IS THE REACTION OF OUR
+          NEW INDIA</q
+        >
+        <br />
+        <p>- NARENDRA MODI, HON'BLE PRIME MINISTER OF INDIA.</p>
+
+        <i id="chn">
+          Chennai Centre of IETE is committed to attain commanding heights and
+          achieve the status of “Centre of Excellence” in Technical, Engineering
+          & Management education by harnessing the best practices in educational
+          innovation and through its concerted endeavors like quality teaching,
+          industrial consultancy and training to the aspirants including
+          corporate training. </i
+        ><br />
+        <br />
+        <button>
+          <a
+            href="about.html"
+            style="text-decoration: none; color: var(--color-font)"
+            >Read More</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="events-container">
+      <h1>RECENT EVENTS</h1>
+      <div class="block-container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/event1.jpeg"
+                class="card-img-top"
+                alt="..."
+                onclick="expandImage(this)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">PROFESSIONAL RESUME WRITING</h5>
+                <p class="card-text">
+                  <br />17th October 2020 <br />
+                  (Saturday) <br /><br />
+                  Mr.M.Vigneshwaran (Softskill Trainer/ e-learning developer)
+                  gave a guidance session on RESUME building in a Professional
+                  manner
+                </p>
+              </div>
+              <div class="card-footer">
+                <button>
+                  <a href="#" class="btn btn-transparent">Read more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/event2.jpeg"
+                class="card-img-top"
+                alt="..."
+                onclick="expandImage(this)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  EVOLUTION OF COMPUTING AND SKILL SETS FOR THE FUTURE
+                </h5>
+                <p class="card-text">
+                  17th October 2020 <br />
+                  (Saturday) <br /><br />
+                  Mr.MallikMahalingam (CEO,Springpath (CISCO)) commenced with
+                  the evolution of hardware and operating software
+                </p>
+              </div>
+              <div class="card-footer">
+                <button>
+                  <a href="#" class="btn btn-transparent">Read more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/event 3.jpeg"
+                class="card-img-top"
+                alt="..."
+                onclick="expandImage(this)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">EASE THE ERROR 1.0</h5>
+                <p class="card-text">
+                  <br />
+                  <br />October 10 & 11 2020 <br /><br /><br />24 Hour national
+                  level hackathon which challenged students to think
+                  out-of-the-box and offer innovative ideas
+                </p>
+              </div>
+              <div class="card-footer">
+                <button>
+                  <a href="#" class="btn btn-transparent">Read more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/event4.jpeg"
+                class="card-img-top"
+                alt="..."
+                onclick="expandImage(this)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">5G AND IT’S HISTORYs</h5>
+                <p class="card-text">
+                  <br /><br />20/09/2020 <br />
+
+                  <br />Mr.SunderPalaniraj (Director IC-design, TDKInvenSense)
+                  gave a technical talk on communication networks
+                </p>
+              </div>
+              <div class="card-footer">
+                <button>
+                  <a href="#" class="btn btn-transparent">Read more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="enlarged-image-container">
+      <span>&times;</span>
+      <img id="enlarged-image" src="" alt="" />
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4" id="contact">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" id="footer-end">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold"
+              style="color: skyblue"
+              id="contacted"
+            >
+              IETE Chennai
+            </h5>
+            <p id="foot-content">
+              <span>IETE Chennai centre,</span><br />
+
+              No: 37, Tamil Nadu 600086 <br />Conran Smith Road <br />Entrance
+              Peters Road, Gopalapuram,Chennai, <br /><br />
+              <span>Phone: 044 2835 0773</span> <br />
+              <span>Email: ietechennai@gmail.com</span>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold"
+              style="color: skyblue"
+            >
+              LINKS
+            </h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Home</a
+              >
+            </p>
+            <p>
+              <a href="#about" class="text-white" style="text-decoration: none"
+                >About</a
+              >
+            </p>
+            <p>
+              <a href="#team" class="text-white" style="text-decoration: none"
+                >Committee</a
+              >
+            </p>
+            <p>
+              <a href="#team" class="text-white" style="text-decoration: none"
+                >Events</a
+              >
+            </p>
+            <p>
+              <a href="#team" class="text-white" style="text-decoration: none"
+                >Contact</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold"
+              style="color: skyblue"
+            >
+              CONNECT WITH US
+            </h5>
+            <a href="#"><img src="./images/ig.png" alt="insta" id="insta" /></a>
+            <a href="#"
+              ><img src="./images/linkedin.png" alt="linkedin" id="linkedin"
+            /></a>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15546.85847749675!2d80.25378366068036!3d13.05382849958934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52663c98c8d203%3A0xdc4a32279f16b962!2sIETE!5e0!3m2!1sen!2sin!4v1693742302978!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <p class="copyright">IETE Chennai @ All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
